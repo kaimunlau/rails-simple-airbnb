@@ -1,0 +1,16 @@
+<div class="d-flex flex-wrap gap-4">
+  <% @flats.each do |flat| %>
+    <div class="card shadow" style="width: 24rem;">
+      <img class="card-img-top object-fit-cover" style="width: 24rem; height: 15rem" src="<%= flat.img_url %>" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title"><%= flat.name %></h5>
+        <p class="card-text"><%= flat.address %></p>
+        <div class="d-flex gap-3">
+          <p><i class="fa-solid fa-user"></i> <%= flat.number_of_guests %></p>
+          <p><i class="fa-solid fa-euro-sign"></i> <%= flat.price_per_night %></p>
+        </div>
+        <a href="#" class="btn btn-primary">More info</a>
+      </div>
+    </div>
+  <% end %>
+</div>
