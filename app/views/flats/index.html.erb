@@ -16,7 +16,7 @@
         <div class="d-flex gap-3">
           <%= link_to "More info", flat, class: "btn btn-outline-primary" %>
           <%= link_to "Edit", edit_flat_path(flat), class: "btn btn-outline-warning" %>
-          <%= link_to "Delete", flat, class: "btn btn-outline-danger" %>
+          <%= link_to "Delete", flat_path(flat), class: "btn btn-outline-danger", data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
         </div>
       </div>
     </div>
