@@ -1,0 +1,24 @@
+<div class="d-flex justify-content-between">
+  <img src="<%= @flat.img_url %>" alt="picture of <%= @flat.name %>">
+  <div class="card shadow" style="width: 24rem;">
+    <div class="card-body">
+      <p>This will be the booking form</p>
+    </div>
+  </div>
+</div>
+
+<div class="border rounded shadow p-4 my-2">
+  <h1><%= @flat.name %></h1>
+  <p><%= @flat.address %></p>
+</div>
+
+<div class="border rounded shadow p-4 my-2">
+  <h2>A bit more info...</h2>
+  <p><%= @flat.description %></p>
+</div>
+
+<div class="border rounded shadow p-4 my-2">
+  <h2>Details</h2>
+  <p><i class="fa-solid fa-user"></i> <%= @flat.number_of_guests %></p>
+  <p><i class="fa-solid fa-euro-sign"></i> <%= @flat.price_per_night %></p>
+</div>
