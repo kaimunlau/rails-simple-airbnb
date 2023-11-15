@@ -13,6 +13,14 @@
   </head>
 
   <body>
-    <%= yield %>
+    <nav class="navbar bg-dark">
+      <div class="container">
+        <a class="navbar-brand link-light" href="/">NotAirBnB</a>
+        <%= link_to "Add Flat", new_flat_path, class: "btn btn-outline-light" %>
+      </div>
+    </nav>
+    <div class="container my-5">
+      <%= yield %>
+    </div>
   </body>
 </html>
